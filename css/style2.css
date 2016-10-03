@@ -1,0 +1,418 @@
+/** {
+    border: 1px solid black;
+}*/
+
+body {
+    margin: 0
+}
+
+hr, .jumbotron>hr  {
+    border: 2px solid #2c3e50;
+    margin-bottom: 30px;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    min-height: calc(100vh - 112px);
+}
+
+.panel-title {
+    font-size: 25px;
+}
+
+h4 {
+    padding-top: 20px;
+}
+
+@font-face {
+    font-family: "cabana";
+    src: url('../font/Cabana-Regular.otf');
+}
+
+.josefin, .jumbotron p {
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 600;
+}
+
+.pacifico {
+    font-family:  'Pacifico','cabana',sans-serif;
+}
+
+.btn {
+    margin: 10px 0;
+}
+
+#lien_avatar_menu .img-circle {
+    position: relative;
+    top: -8px;
+    width: 35px;
+    height: 35px;
+}
+
+#lien_avatar_menu .dropdown-toggle{
+    padding-bottom: 5px;
+}
+
+.navbar, .navbar-brand {
+    font-size: 20px;
+    border-radius: 0;
+}
+.navbar {
+    margin-bottom: 0;
+}
+
+footer {
+    background: #18a98e;
+    padding: 15px;
+}
+
+#trierPar {
+    margin-top: 20px;
+}
+
+#fleche {
+    margin-top: 55px;
+}
+
+.hrListeRecette {
+    margin:0;
+}
+
+#imgListeRecettes {
+    width: 100%;
+    height: 190px;
+    border-radius: 5px 5px 0 0;
+}
+
+
+.titreRecetteLR {
+    height: 45px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 40px;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin: 30px 0 10px 10px;
+}
+
+.btnBookmark {
+    border-radius: 50%;
+    position: absolute;
+    top:165px;
+    left:50px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+
+}
+
+.btnCalendar {
+    border-radius: 50%;
+    position: absolute;
+    top:165px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+}
+
+.infoRecette {
+    padding: 5px 0;
+}
+
+.unLR {
+    background: #76828d;
+    height: 25px;
+    border-radius: 0 0 0 5px;
+}
+
+.deuxLR {
+    background: #69d3bf;
+    height: 25px;
+}
+
+.troisLR {
+    background: #bac4c5;
+    height: 25px;
+    border-radius: 0 0 5px 0;
+}
+
+.unR {
+    background: #76828d;
+    height: 40px;
+    padding-top: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.deuxR {
+    background: #fff;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.troisR {
+    background: #69d3bf;
+    height: 40px;
+    padding: 10px 2px 0 2px;
+}
+
+.jumbotron p {
+    font-size: 20px;
+}
+
+.quatreR {
+    background: #bac4c5;
+    height: 40px;
+    padding-top: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#photoRecette {
+    width: 100%;
+}
+
+#OnOff {
+    position: absolute;
+    top:30px;
+}
+
+#avatarCommentaire {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: -18px;
+    top: 5px;
+}
+
+.commentaire {
+    padding: 20px;
+    border-left: 1px solid #2c3e50;
+}
+
+.supprCommentaire {
+    position: relative;
+    top: 35px;
+}
+
+#supprRecette {
+    right: 15px;
+}
+
+.photoRecetteHome {
+    width: 100%;
+    height: 166px;
+    border-radius: 5px 0 0 5px;
+}
+
+.blocRecetteHome {
+    padding:0;
+}
+
+.blocRecetteHome > div {
+    padding:0;
+}
+
+.blocRecetteHome hr {
+    margin-bottom: 15px;
+}
+
+.titreRecetteHome {
+    height: 45px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 40px;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+
+.unHome {
+    background: #76828d;
+    height: 32px;
+    padding-top: 6px;
+    margin-top: 8px;
+}
+
+.deuxHome {
+    background: #fff;
+    height: 32px;
+    padding-top: 6px;
+    margin-top: 8px;
+}
+
+.troisHome {
+    background: #69d3bf;
+    height: 32px;
+    padding: 6px 2px 0 2px;
+    margin-top: 8px;
+}
+
+.quatreHome {
+    background: #bac4c5;
+    height: 32px;
+    padding-top: 6px;
+    border-radius: 0 0 5px 0;
+    margin-top: 8px;
+}
+
+#modifPhotoRecette {
+    position: absolute;
+    bottom: 40%;
+    display:none;
+}
+
+#divPhotoRecette:hover #modifPhotoRecette {
+    left:40%;
+    display: block;
+}
+
+.espace {
+    margin: 30px 0;
+}
+
+.photoRecetteMenuHome {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.un {
+    background: #76828d;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.deux {
+    background: #eee;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.trois {
+    background: #69d3bf;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.quatre {
+    background: #bac4c5;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.titreRecetteMenuHome {
+    height: 45px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 40px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.panel-body {
+    margin-bottom: 0;
+}
+
+.panel-success {
+    padding: 15px;
+}
+
+.supprRepasMenu {
+    position: relative;
+    top: 70px;
+}
+
+.plusMoins {
+    top: 20px;
+}
+
+.plusMoins div {
+    padding-left: 0;
+}
+
+.ajs-message.ajs-custom { 
+    color: #2c3E50;  
+    background-color: #69D3BF;  
+    border-color: #31708f; 
+    border-radius: 5px; 
+}
+
+.calendarArchive {
+    top: 50px;
+    margin-bottom: 50px;
+}
+
+.boutonTitreCompte {
+    top: 18px;
+}
+
+#rondDegrade {
+    position: absolute;
+    width: 105px;
+    height:105px;
+}
+
+#avatarCompte {
+    margin-top: 5px;
+    margin-left:5px;
+    position: relative;
+    width: 95px;
+    height:95px;
+}
+
+
+.ligneInfoCompte {
+    height: 50px;
+    padding: 2px 0;
+}
+
+.espaceTitreCompte {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#avatarFille404 {
+    border-radius: 10px;
+    border: 2px solid #18A98E;
+}
+
+#delAll {
+    position: relative;
+    top: 18px;
+}
+
+.boutonAncienMenu {
+    background: #798D8F;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(149, 165, 166);
+    border-color: rgb(149, 165, 166);
+    margin: 10px 0;
+    border-width: 2px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.navbar-form {
+    margin: 0;
+}
+
+.ligneTri {
+    color: #2c3e50;
+}
